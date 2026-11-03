@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -9,6 +10,18 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+function getLocalIp() {
+  const interfaces = os.networkInterfaces();
+  for (const name of Object.keys(interfaces)) {
+    for (const iface of interfaces[name] || []) {
+      if (iface.family === 'IPv4' && !iface.internal) {
+        return iface.address;
+      }
+    }
+  }
+  return 'localhost';
+}
 
 app.use(cors());
 app.use(express.json());
@@ -260,6 +273,11 @@ if (fs.existsSync(distDir)) {
   });
 }
 
+const localIp = getLocalIp();
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Panda Easy Kitchen fullstack server running on http://127.0.0.1:${PORT}`);
+  console.log(`\n======================================================`);
+  console.log(`🐼 Panda Easy Kitchen Fullstack Store is Live!`);
+  console.log(`➜ Local:   http://localhost:${PORT}`);
+  console.log(`➜ Network: http://${localIp}:${PORT} (Open on your Mobile)`);
+  console.log(`======================================================\n`);
 });
