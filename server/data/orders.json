@@ -1,0 +1,39 @@
+[
+  {
+    "id": "PEK-2026-9950",
+    "createdAt": "2026-11-03T10:26:36.636Z",
+    "status": "confirmed",
+    "customer": {
+      "fullName": "Anand Kumar",
+      "mobile": "+91 9876543210",
+      "email": "anand@example.com"
+    },
+    "shippingAddress": {
+      "city": "Bengaluru",
+      "fullName": "Anand Kumar",
+      "flatHouseNo": "B-204 Palm Meadows",
+      "streetArea": "Ramagondanahalli, Whitefield",
+      "pincode": "560066",
+      "mobile": "+91 9876543210",
+      "state": "Karnataka"
+    },
+    "items": [
+      {
+        "productId": "pek-vac-01",
+        "variantName": "Matte Charcoal Black",
+        "quantity": 1,
+        "price": 1499,
+        "productName": "Panda TurboClean Pro Cordless Handheld Car & Desk Vacuum",
+        "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80"
+      }
+    ],
+    "subtotal": 1499,
+    "discount": 100,
+    "couponCode": "PANDA100",
+    "shippingFee": 0,
+    "total": 1399,
+    "paymentMethod": "cod",
+    "estimatedDeliveryDate": "Sat, 7 Nov, 2026",
+    "trackingNumber": "DELHIVERY-IN-35758908"
+  }
+]
