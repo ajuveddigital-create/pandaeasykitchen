@@ -142,3 +142,4 @@ const PolicyPage: React.FC = () => {
 };
 
 export default PolicyPage;
+

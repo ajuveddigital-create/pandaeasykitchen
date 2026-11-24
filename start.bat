@@ -8,3 +8,4 @@ echo Press Ctrl+C anytime to stop.
 echo.
 node server\index.js
 pause
+

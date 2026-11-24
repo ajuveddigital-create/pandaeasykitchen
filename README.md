@@ -155,3 +155,6 @@ Open your browser at: **`http://localhost:3001`** (or **`http://127.0.0.1:3001`*
 - ✅ **Real Backend Creation**: Real orders are saved and trackable by Order ID (`PEK-2026-XXXX`) or mobile number.
 - ✅ **100% Responsive**: Tested on mobile viewport, tablet, and desktop viewports.
 - ✅ **Production Build Verified**: Passes `tsc && vite build` with zero compiler errors.
+
+#   p a n d a e a s y k i t c h e n  
+ 

@@ -807,3 +807,4 @@ export const COUPONS: { [code: string]: { discount: number; type: 'percentage' |
   'WELCOME10': { discount: 10, type: 'percentage', min: 299, desc: '10% Off your first order' },
   'FESTIVE200': { discount: 200, type: 'fixed', min: 1499, desc: '₹200 Flat Off on orders above ₹1,499' },
 };
+
